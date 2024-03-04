@@ -6,8 +6,6 @@ const ctx = canvas.getContext('2d');
 
 
 
-//object defining & object variables
-
 //define the SVG for the player
 const playerSVG = `
 <svg width="861" height="249" viewBox="0 0 861 249" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +28,10 @@ const playerSVG = `
 </svg>
 `;
 
+
+
+
+
 //function to convert the SVG string to an Image object
 function svgToImage(svgString) {
     const blob = new Blob([svgString], {type: 'image/svg+xml'});
@@ -38,6 +40,11 @@ function svgToImage(svgString) {
     image.src = url;
     return image;
 }
+
+
+
+
+
 
 //create player object
 const player = {
@@ -50,10 +57,18 @@ const player = {
     caughtLetters: [] //array to store caught letters
 };
 
+
+
+
+
 //load image
 player.image.onload = function() {
     update(); //updates game
 };
+
+
+
+
 
 //update drawPlayer function to use the SVG image instead of drawing a rectangle
 function drawPlayer() {
@@ -248,6 +263,7 @@ document.addEventListener('keyup', function(event) {
 //starts the game
 resetLetter(); //resets position and randomizes letter
 update(); //keeps updating information and frames
+
 
 
 
