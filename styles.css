@@ -1,0 +1,201 @@
+#landingPage{
+    background-color: rgba(248, 255, 251, 100);
+    width: 1366px;
+    height: 768px;
+    display: block;
+    position: relative;
+}
+  
+#title{
+margin: 0 auto;
+display: flex;
+justify-content: center;
+font-family: Filson Soft, sans-serif;
+font-size: 25px;
+}
+
+#username{
+margin: 0 auto; 
+width: 550px;
+height: 65px;
+padding: 7px 400px 5px 30px;
+background-color: rgba(211, 228, 219, 100);
+border-radius: 120px;
+box-sizing: border-box;
+font-family: Filson Soft, sans-serif;
+font-size: 12px;
+}
+
+#hole{
+display: flex;
+justify-content: center;
+}
+
+#startButton {
+font-family: filson soft, sans-serif;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 270px;
+height: 90px;
+border-radius: 65px;
+box-sizing: border-box;
+background-color: rgba(194, 0, 0, 1);
+color: rgba(255, 255, 255, 1);
+font-size: 28px;
+border: none;
+transition: background-color 0.3s;
+}
+
+#startButton:hover {
+background-color: rgba(90, 0, 0, 1);
+}
+
+#gameScreen {
+display: none;
+position: relative;
+background-color: rgba(211, 228, 219, 100);
+width: 1366px;
+height: 768px;
+}
+
+#leftKey{
+margin: 0;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 68%;
+left: 43%;
+}
+
+#rightKey{
+margin 0;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 68%;
+left: 53%;
+}
+
+#leftKeyPressed{
+margin: 0;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 68%;
+left: 43%;
+visibility:hidden;
+}
+
+#rightKeyPressed{
+margin 0;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 68%;
+left: 53%;
+visibility:hidden;
+}
+
+canvas {
+border: none;
+background-color: rgba(248, 255, 251, 100);
+display: block;
+margin: 0;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#restartButton {
+margin: 0;
+position: absolute;
+background-color: rgba(194, 0, 0, 1);
+font-family: filson soft, sans-serif;
+color: white;
+border-radius: 20px; 
+padding: 10px 20px;
+box-sizing: border-box;
+border: none;
+top: 70%;
+left: 29.5%;
+transform: translate(-50%, -50%);
+transition: background-color 0.3s;
+}
+
+#restartButton:hover {
+background-color: rgba(90, 0, 0, 1);
+}
+
+#submitButton {
+position: absolute;
+background-color: rgba(133, 181, 146, 1);
+font-family: filson soft, sans-serif;
+color: black;
+border-radius: 20px; 
+padding: 10px 20px;
+box-sizing: border-box;
+border: none;
+top: 70%;
+left: 70.6%;
+transform: translate(-50%, -50%);
+transition: background-color 0.3s;
+}
+
+#submitButton:hover {
+background-color: rgba(100, 151, 110, 1);
+}
+
+#submissionScreen {
+display: none;
+text-align: center;
+background-color: rgba(248, 255, 251, 100);
+width: 1366px;
+height: 768px;
+position: relative;
+}
+
+#check {
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#submissionText {
+top: 300px;
+font-family: Filson Soft, sans-serif;
+font-size: 60px;
+}
+
+#caughtLetters {
+font-family: Filson Soft, sans-serif;
+font-size: 60px;
+}
+
+#restartSubmitButton {
+font-family: filson soft, sans-serif;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 270px;
+height: 90px;
+padding: 20px 60px 20px;
+border-radius: 65px;
+box-sizing: border-box;
+background-color: rgba(194, 0, 0, 1);
+color: rgba(255, 255, 255, 1);
+font-family: Filson Soft, sans-serif;
+font-size: 28px;
+border: none;
+transition: background-color 0.3s;
+}
+
+#restartSubmitButton:hover {
+background-color: rgba(90, 0, 0, 1);
+}

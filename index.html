@@ -1,0 +1,116 @@
+<!DOCTYPE html> </html?>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <script type="text/javascript" src="/script.js"></script>
+        <title>Assignment 2</title>
+    </head>
+
+    <body>
+        <!-- landing page -->
+        <div id='landingPage'>
+    
+        <!-- linebreaks -->
+            <br>
+            <br>
+            
+            <!-- title header -->
+            <div id ='title'>
+            <h1>Create your</h1>
+            </div>
+            
+        
+        <!-- username header -->
+        <div id ='username'>
+        <h2>Username</h2>
+        </div>
+        
+        <!-- linebreaks -->
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- hole image -->
+        <div id ='hole'>
+        <img src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/i9mpbzeyaao-1%3A37?alt=media&token=f7dcd992-d6a0-4bc4-9ebd-77e6b585f3bc"
+            alt="Not Found">
+        </div>
+        
+        <!-- linebreaks -->
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- start button that navigates user to gameScreen -->
+        <button id="startButton" onclick="startGame()">Start</button>
+    </div> <!-- end of landingPage -->
+    
+        
+    
+    
+    
+    <!-- gameScreen is where users input their name by catching the falling letters. use left and right arrow keys to move player around. -->
+    <div id="gameScreen">
+        
+        <img id="leftKey" 
+            src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/9o8f87lyxca-51%3A10?alt=media&token=6ef55854-d945-447f-b7fb-376b40e35ac4"
+            alt="Not Found"
+            > 
+        
+        <img id="rightKey"
+            src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/sou7qwa71a-51%3A7?alt=media&token=bd33c0c4-4a00-48cf-b3d1-56704670ae20"
+            alt="Not Found"
+            >
+    
+        <img id="leftKeyPressed" 
+            src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/q2cpxcbgxu-1%3A66?alt=media&token=e5dd6fcf-3695-400c-bae6-d3d03d84477a"
+            alt="Not Found"
+            > 
+        
+        <img id="rightKeyPressed"
+            src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/tp4ekufbknb-51%3A6?alt=media&token=e3b72343-7674-4439-9613-d891be726c1b"
+            alt="Not Found"
+            >
+        
+        <!-- create a canvas for the input. -->
+        <canvas id="gameCanvas" width="650" height="400"></canvas>
+        <!-- creates a button that will restart game (clear all letters and reset letter position to top) when mouse clicked. -->
+        <button id="restartButton" onclick="restartGame()">Restart</button>
+        <!-- creates a button that allows users to submit their username. navigates users to confirmation screen -->
+        <button id="submitButton" onclick="showSubmissionScreen()">Submit</button>
+    </div><!-- end of gameScreen -->
+    
+    
+    
+    
+    
+    <!-- submissionScreen confirms user's inputed username. allows users to restart from landingPage. -->
+    <div id="submissionScreen">
+        
+        <!-- linebreaks -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- image of check mark, displays "Not Found" if image does not load -->
+        <div id ='check'>
+        <img src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/wsnj3sb21fj-40%3A2?alt=media&token=26f636d7-1ed0-49bd-87fe-7b3f8303c15e"
+            alt="Not Found">
+        </div>
+        
+        <br> <!-- linebreak -->
+        
+        <!-- confirmation text that says Nice to meet you, [stored username from game]! -->
+        <h1 id="submissionText">Nice to meet you, <span id="caughtLetters"></span>!</h1>
+        
+        <!-- linebreaks -->
+        <br>
+        <br>
+        
+        <!-- restart button takes users back to landingPage -->
+        <button id =restartSubmitButton onclick="restartGameFromSubmission()">Restart</button>
+    </div> <!-- end of submissionScreen -->
+  </body>
